@@ -1,0 +1,65 @@
+# Django / Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+backend/venv/
+ENV/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Node.js / React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+db.sqlite3
+*.db
+*.sqlite3
+
+# Media and Uploads
+backend/media/*
+!backend/media/.gitkeep
+!backend/media/documents/.gitkeep
+!backend/media/slide_cache/.gitkeep
+backend/media/documents/*
+!backend/media/documents/.gitkeep
+backend/media/slide_cache/*
+!backend/media/slide_cache/.gitkeep
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.log

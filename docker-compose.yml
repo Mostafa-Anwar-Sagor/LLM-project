@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: aliis_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: aliis
+      POSTGRES_USER: aliis
+      POSTGRES_PASSWORD: aliis_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - aliis_pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: aliis_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - aliis_redisdata:/data
+
+volumes:
+  aliis_pgdata:
+  aliis_redisdata:
